@@ -8,4 +8,4 @@ for i in range(len(test_list),0,-1):
 	if(j>len(test_list)):
 		break
 	j+=1
-print (str(res))
+print(str(res))
