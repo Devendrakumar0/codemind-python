@@ -1,0 +1,14 @@
+n=int(input())
+a=0
+b=1
+c=a+b
+while(c<=n):
+    a=b
+    b=c
+    c=a+b
+if(abs(b-n)==abs(c-n)):
+    print(b,c)
+elif(abs(b-n)<abs(c-n)):
+    print(b)
+else:
+    print(c)
