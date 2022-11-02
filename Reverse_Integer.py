@@ -1,0 +1,14 @@
+n=input()
+if(int(n)<0):
+    s="-"
+    if(n[-1]=="0"):
+        s=s+n[-2:0:-1]
+    else:
+        s=s+n[-1:0:-1]
+else:
+    s=""
+    if(n[-1]=="0"):
+        s=s+n[-2::-1]
+    else:
+        s=s+n[::-1]
+print(s)
