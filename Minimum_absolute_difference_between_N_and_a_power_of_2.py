@@ -1,0 +1,13 @@
+n=int(input())
+i=0
+a=0
+while(1):
+    a=2**i
+    if(a>=n):
+        break
+    else:
+        i+=1
+b=2**(i-1)
+d1=abs(n-a)
+d2=abs(n-b)
+print(min(d1,d2))
