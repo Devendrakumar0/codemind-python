@@ -1,29 +1,30 @@
-def prime(p):
-    if(p>1):
-        for i in range(2,int(p**(0.5))+1):
-            if(p%i==0):
-                return(0)
+def isprime(p):
+    if p>1:
+        for i in range(2,int(p**0.5)+1):
+            if p%i==0:
+                break
         else:
-            return(1)
+            return 1
     else:
-        return(0)
-
+        return 1
 n=int(input())
-if(prime(n)):
+a=n
+b=n
+c=n
+if isprime(a):
     print(0)
 else:
-    i=n-1
-    j=n+1
-    while(1):
-        if(prime(i)):
-            d1=abs(i-n)
+    while 1:
+        if isprime(b):
             break
         else:
-            i-=1
-    while(1):
-        if(prime(j)):
-            d2=abs(j-n)
+            b=b-1
+    while 1:
+        if isprime(c):
             break
         else:
-            j+=1
-    print(min(d1,d2))
+            c=c+1
+    d=abs(b-a)
+    d1=abs(c-a)
+    print(min(d,d1))
+    
