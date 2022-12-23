@@ -1,10 +1,10 @@
 n=int(input())
-for i in range(n,0,-1):
-    for j in range(1,i+1):
+li=[]
+for i in range(n):
+    li.append("x")
+for i in range(n):
+    li[i]="0"
+    for j in li:
         print(j,end="")
-        
+    li[i]="x"
     print("")
-
-        
-        
-        
