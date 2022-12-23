@@ -1,10 +1,8 @@
 n=int(input())
-li=[]
+li=["A","B","C","D","E","F","G","H","I","J","K","L"
+      ,"M","N","O","P","Q","R","S","T","U","V","W"
+      ,"X","Y","Z"]
 for i in range(n):
-    li.append("x")
-for i in range(n):
-    li[i]="0"
-    for j in li:
-        print(j,end="")
-    li[i]="x"
+    for j in range(n):
+        print(li[i],end=" ")
     print("")
